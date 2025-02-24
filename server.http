@@ -1,0 +1,43 @@
+### storeBook
+POST http://localhost:9000/books
+Content-Type: application/json
+
+{
+  "name": "Bumi Manusia",
+  "year": 1980,
+  "author": "Pramoedya Ananta Toer",
+  "summary": "Bumi Manusia adalah buku pertama dari Tetralogi Buru karya Pramoedya Ananta Toer yang pertama kali diterbitkan oleh Hasta Mitra pada tahun 1980.",
+  "publisher": "Lentera Dipantara",
+  "pageCount": 538,
+  "readPage": 50,
+  "reading": true,
+  "finished": false
+}
+
+### getBooks
+GET http://localhost:9000/books
+
+### getBookById
+GET http://localhost:9000/books/HMDclee4sDsypL4F
+
+### getBookQuery
+GET http://localhost:9000/books?name=bumi
+
+### updateBook
+PUT http://localhost:9000/books/HMDclee4sDsypL4F
+Content-Type: application/json
+
+{
+  "name": "Bumi Manusia",
+  "year": 1980,
+  "author": "Pramoedya Ananta Toer",
+  "summary": "Bumi Manusia adalah buku pertama dari Tetralogi Buru karya Pramoedya Ananta Toer yang pertama kali diterbitkan oleh Hasta Mitra pada tahun 1980.",
+  "publisher": "Lentera Dipantara",
+  "pageCount": 538,
+  "readPage": 50,
+  "reading": true,
+  "finished": true
+}
+
+### removeBookId
+DELETE http://localhost:9000/books/AJZgS_t1ms6Hwn6p
